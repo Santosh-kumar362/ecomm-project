@@ -1,0 +1,462 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: 'roboto',sans-serif;
+}
+:root{
+    --primary:indianred;
+    --secondary:rgba(15,10,29,0.849);
+    --light:#2f3640;
+
+}
+header{
+    width:100%;
+    height:100vh;
+}
+.navfirst{
+    width:100%;
+    height:80px;
+    display:flex;
+     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow:2 px 0px 3px grey;
+    text-align: center;
+}
+.navfirst .left{
+    flex-basis:50%;
+    letter-spacing:2px;
+}
+.navfirst .left a{
+      text-decoration: none;
+      color:var(--primary);
+      font-weight:bold;
+      margin:0px 5px;;
+       
+}
+.right{
+    flex-basis:50%;
+
+}
+  .right i{
+    font-size:20px;
+    margin:0px 5px;
+    background-color:var(--primary);
+    color:white;
+    padding: 8px;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+.navfirst .right i:hover{
+  transform:rotate(360deg);
+
+}
+.navtwo{
+    width:100%;
+    height:120px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    text-align:center;
+
+}
+.navtwo .navtwo-left i{
+    margin-left:15px;
+}
+.navtwo .navtwo-left, .navtwo .navtwo-center,.navtwo .navtwo-right{
+  flex-basis:30%;
+  margin:auto;
+  cursor:pointer;
+}
+.navtwo .navtwo-center h1{
+    color:var(--primary);
+    font-size:2rem;
+    letter-spacing:2px;
+    font-weight:bold;
+}
+.navtwo .navtwo-center h1 span{
+    color:var(--secondary);
+}
+.navtwo .navtwo-center p{
+    color:grey;
+    font-size:15px;
+    margin-top:5px;
+}
+.navthree{
+    width:100%;
+    height:70px;
+    line-height:70px;
+
+}
+.navthree ul{
+    list-style:none;
+    text-align:center;
+
+}
+.navthree ul li{
+    display:inline-block;
+    width:150px;
+    position:relative;
+    z-index:99;
+
+}
+.navthree ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight:500;
+    display:block;
+}
+.navthree ul li a:hover{
+    color:var(--primary)
+}
+.navthree ul li i{
+    color:var(--primary);
+    margin-right:5px;
+}
+.navthree ul ul{
+    position: absolute;
+    top:70px;
+    left:0px;
+    display:none;
+}
+.navthree ul ul li{
+    background-color:white;
+    border-bottom:1px solid var(--primary);
+   
+
+}
+.navthree ul li:hover > ul{
+    display:block;
+}
+.featured{
+    width:100%;
+    height:60vh;
+    background:linear-gradient( to right,rgba( 0,0,0,0.8)20%,rgba(255,255,255,0.2)),
+    url('gril\ shopping.jpg');
+    background-size:cover;
+    position:relative;
+}
+.featured-text{
+    max-width:500px;
+    position:absolute;
+    top:50%;
+    left:10%;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:2rem;
+    letter-spacing: 5px;
+    font-family:'akaya kanadaka',cursive;
+    
+
+}
+.featured-text button{
+    padding:10px 20px;
+    border:noe;
+    outline:none;
+    background-color:var(--secondary);
+    margin:20px 0px;
+    color:white;
+}
+.latest{
+    padding:50px 100px;
+
+}
+.product-intro{
+    text-align:center;
+    
+}
+.product-intro h1{
+    color:var(--primary);
+    letter-spacing: 0.2rem;
+    font-size:2rem;
+    font-weight:bolder;
+}
+.product-intro h1 span{
+    color:var(--secondary)
+}
+.product-intro p{
+    color:grey;
+    margin:15px 0px;
+
+}
+.card-container{
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer;
+    margin:4rem 0;
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding:0.8rem;
+    position:relative;
+}
+.card img{
+    width:100%;
+}
+.card i{
+    color:goldenrod;
+    margin:10px 0;
+
+}
+.card button{
+    color:white;
+    background-color: var(--secondary);
+    border:none;
+    outline:none;
+    margin-top:15px;
+    padding:5px 20px;
+}
+.card:hover img{
+     width: 80%;
+     height:70px;
+    color:var(--primary);
+    transition:1.5s ease-in-out;
+
+}
+.card::before{
+    content:'20% off';
+    width:25%;
+    height:10%;
+    line-height:25px;
+    color:white;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: var(--primary);
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+}
+.trends{
+    padding:50px 100px;
+    background-color: rgba( 0,0,0,0.1);
+}
+.trends .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 450px;
+  }
+
+  .trends .swiper-slide img {
+    display: block;
+    width: 100%;
+    height:100%;
+  }
+  footer{
+    background-color: var(--secondary);
+    color:white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  footer div{
+    flex-basis:30%;
+
+  }
+  footer h1{
+    letter-spacing: 0.5rem;
+  }
+  footer h1 span{
+    color:var(--primary);
+  }
+  footer p{
+    font-size:1rem;
+  }
+  footer i{
+    margin:0px 5px;
+  }
+  #sidenav{
+    display: none;
+  }
+  #menubar{
+    display: none;
+  }
+  
+ @media only screen and (max-width:769px){
+ 
+    .navfirst{
+        position:relative;
+        z-index:2;
+        background-color: white;
+    }
+    .right i{
+       font-size:0.7rem;
+       margin:0px 5px;
+    }
+    .navtwo{
+       height:80px;
+       width:100%;
+
+    }
+    .navtwo{
+        width:100%;
+        height:120px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap:wrap;
+        text-align:center;
+    
+    }
+    .navtwo .navtwo-left i{
+        margin-left:-10px;
+    }
+    .navtwo .navtwo-left, .navtwo .navtwo-center,.navtwo .navtwo-right{
+      flex-basis:30%;
+      margin:auto;
+      cursor:pointer;
+    }
+    .navtwo .navtwo-center h1{
+       font-size:1.5rem;
+        letter-spacing:2px;
+       
+    }
+    .navtwo .navtwo-center p{
+        color:grey;
+        font-size:10px;
+        margin-top:5px;
+    }
+    .navthree{
+        display:none;
+    }
+    .featured{
+        background-attachment:fixed;
+    }
+    .latest{
+        padding:0px 50px;
+    }
+    .product-intro{
+        text-align:center;
+        
+    }
+    .product-intro h1{
+        color:var(--primary);
+        letter-spacing: 0.2rem;
+        font-size:2rem;
+        font-weight:bolder;
+    }
+  
+    .product-intro p{
+        color:grey;
+        margin:15px 0px;
+    
+    }
+    .card-container{
+        margin:2rem 0;
+        flex-direction:column
+    } 
+    .card-container .card{
+        flex-basis:100%;
+       margin-top:30px;
+    }
+    .card img{
+        width:100%;
+        height:40vh;
+        margin-top:60px;
+        
+       
+    }
+    #sidenav{
+        display:  block;
+    }
+    #menubar{
+        display:block;
+        position: absolute;
+        top:50%;
+        right:0;
+        transform:translate(0%,-50%);
+        z-index: 99;
+        background-color: var(--primary);
+        color:white;
+        font-size: 2rem;
+        padding: 20px 10px;
+        animation: animate 5s ease infinite;
+    }
+    @keyframes animate{
+        0%{
+            background-color: var(--secondary);
+        }
+        100%{
+            background-color:var(--primary);
+        }
+    }
+    #sidenav{
+        width:250px;
+        height:100vh;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:3;
+        background-color: var(--light);
+        padding-top:70px;
+        display:block;
+        overflow:hidden;
+        transition: 0.5 ease-in-out;
+    
+    }
+    #sidenav ul{
+        list-style:none;
+    
+    }
+    #sidenav ul li{
+        display:inline-block;
+        width:200px;
+        position:relative;
+        z-index:99;
+        margin:10px 20px;
+    
+    }
+    #sidenav ul li a{
+        text-decoration:none;
+        color:white;
+        font-weight:500;
+        display:block;
+        font-size:20px;
+        padding:10px 20px;
+    }
+    #sidenav ul li a:hover{
+        color:var(--primary)
+    }
+    #sidenav ul li i{
+        color:white;
+        margin-right:5px;
+    }
+    #sidenav ul ul{
+        position: absolute;
+        top:70px;
+        left:0px;
+        display:none;
+    }
+    #sidenav ul ul li{
+        border-bottom:1px solid white;
+       
+    
+    }
+    #sidenav ul li:hover > ul{
+        display:block;
+    }
+
+  
+
+
+}
+
+  
+
+
